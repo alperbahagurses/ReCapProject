@@ -2,6 +2,7 @@
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
+using Entities.Concrete;
 using System;
 
 namespace ConsoleUI
@@ -17,6 +18,7 @@ namespace ConsoleUI
                 Console.WriteLine("Marka : "+cars.BrandName+" "+cars.Description+" "+cars.ColorName+" => "+cars.DailyPrice);
             }
 
+           
         }
     }
 }
