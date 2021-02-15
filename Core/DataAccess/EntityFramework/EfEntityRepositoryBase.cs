@@ -16,8 +16,8 @@ namespace Core.DataAccess.EntityFramework
         {
             using (TContext context = new TContext())
             {
-                var addedEntity = context.Entry(context);
-                addedEntity.State = Microsoft.EntityFrameworkCore.EntityState.Added;
+                var addedEntity = context.Entry(entity);
+                addedEntity.State = EntityState.Added;
                 context.SaveChanges();
             }
         }
@@ -26,8 +26,8 @@ namespace Core.DataAccess.EntityFramework
         {
             using (TContext context = new TContext())
             {
-                var deleteEntity = context.Entry(context);
-                deleteEntity.State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+                var deleteEntity = context.Entry(entity);
+                deleteEntity.State = EntityState.Deleted;
                 context.SaveChanges();
             }
 
@@ -53,8 +53,8 @@ namespace Core.DataAccess.EntityFramework
         {
             using (TContext context = new TContext())
             {
-                var updateEntity = context.Entry(context);
-                updateEntity.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                var updateEntity = context.Entry(entity);
+                updateEntity.State = EntityState.Modified;
                 context.SaveChanges();
             }
         }
