@@ -26,5 +26,12 @@ namespace Business.Constants
         public static string RentalAddedError = "Araç kiralanamaz !";
         public static string RentDelete = "Kiralama silindi";
         public static string RentUpdate = "Kiralama güncellendi";
+        internal static string BrandListed;
+        internal static string CarDetails;
+        internal static string CarListed;
+        internal static string ColorListed;
+        internal static string CustomerAdded;
+        internal static string CustomerDelete;
+        internal static string CustomerUpdate;
     }
 }
